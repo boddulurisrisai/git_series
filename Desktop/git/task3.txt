@@ -50,5 +50,4 @@ Ans)->Deleting a branch LOCALLY
 PR links:
 
 https://github.com/codewayy/github_series/pull/71
-https://github.com/codewayy/git_series/pull/1
-
+https://github.com/codewayy/git_series/pull/01

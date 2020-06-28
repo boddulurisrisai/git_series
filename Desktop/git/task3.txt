@@ -1,0 +1,53 @@
+Hello everyone,I am SriSai and I am pursuing B.Tech at KL University.
+Task 3
+
+Q1) What is meant by the term fork and clone?
+Ans)->The term fork means producing a personal copy of someone else project.Git Fork means 
+      you just create a copy of the main repository of a project source code to your own GitHub profile.
+    ->The term clone means getting a local copy of the code present in the repository. After cloning you
+      can then do whatever changes you like in the code and then you can pull the changes back to the repository.
+
+    
+Q2)What are branches in Github?
+Ans)Branches are the feature used for separating a feature or part of code from  master in order 
+    not to mess something in your main code.We can create,rename,update,delete branches and can 
+    merge with th master branch if required.
+
+Q3)What is PR?
+Ans)PR means Pull requests in which u tell others about changes you've pushed to a GitHub repository.
+     Once a pull request is sent,interested parties can review the set of changes, discuss potential 
+     modifications, and even push follow-up commits if necessary.
+
+
+Q4)Can we delete the master branch if not Why?
+Ans)Yes,we can delete the master branch using git commands first i local repository and then remote repository.
+   ->First you delete master in your local clone. To do this we first make a new branch called placeholder
+     or similar, and delete master from there:
+
+     git branch placeholder
+     git checkout placeholder
+     git branch -D master
+
+   ->Next we must delete the branch on github
+     git push origin :master
+
+
+Q5)How can we delete a branch? (Explore a bit about this yourself)
+Ans)->Deleting a branch LOCALLY
+      Git will not let you delete the branch you are currently on so you must make sure to checkout a branch that you are
+      NOT deleting. For example: git checkout master
+
+      git branch -d <branch>
+
+   ->Deleting a branch REMOTELY
+
+     git push <remote> --delete <branch>
+               or
+     git push <remote> :<branch>
+
+
+
+PR links:
+
+https://github.com/codewayy/github_series/pull/71
+https://github.com/codewayy/git_series/pull/01
